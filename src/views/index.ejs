@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Home</title>
 </head>
 <body>
+    <main>
+        <div class="title">
+            <h1>
+                <img src="/img/login2.png" alt="Login">
+            </h1>
+        </div>
+        <div class="formulario">
+            <form action="/auth/login" method="post">
+                <div class="login">
+                    <label for="login">Login</label>
+                   <input type="text" id="email" name="email" placeholder="Ex: email@gmail.com">
+                </div>
 
-    <h1>Login</h1>
-    <form action="/auth/login" method="post">
-        <div>
-            <label for="login">Login</label>
-            <input type="text" id="email" name="email" placeholder="Ex: email@gmail.com">
-        </div>
-
-        <div>
-            <label for="senha">Digite sua senha:</label>
-            <input type="password"name="senha" id="senha" placeholder="Ex: 123456">
-        </div>
-        <a href="#" id="resetsenha">Esqueci minha senha</a>
-        <div id="entrar">
-            <button id="botaocadastre"type="submit"><a href="/login/cadastro" style="color:white">Cadastre-se</a></button>
-            <button type="submit">Entrar</button>
-        </div>
-    </form>
+                <div class="senha">
+                    <label for="senha">Password:</label>
+                    <input type="password"name="senha" id="senha" placeholder="Ex: 123456">
+                </div>
+                    <a href="#" id="reset-password">Forgot your password?</a>
+                <div id="entrar">
+                    <button id="botaocadastre"type="submit"><a href="/login/cadastro" style="color:white">Create your account</a></button>
+                    <button type="submit">Sign in</button>
+                </div>
+            </form>
+    </div>
+</main>
 
 </body>
 </html>

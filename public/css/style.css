@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: linear-gradient(to bottom,#ffb9ba, #f3dfb6);
+    background-attachment: fixed;
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+h1 img {
+    height: 15vh;
+}
+
+div.formulario {
+    width: fit-content;
+
+    padding: 20px;
+   text-align: left;
+   height: 30vh;
+   background-color: #ffff;
+   border-radius: 8px;
+ 
+}
+
+form {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+}
+
+form div.login{
+    margin-bottom: 15px;
+}
+
+form div.senha{
+    margin-bottom: 20px;
+}
+
+form #reset-password{
+    color: #BA48DB;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+form #reset-password:hover{
+    color: #F952EB;
+}
