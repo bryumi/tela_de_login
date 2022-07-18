@@ -25,38 +25,83 @@ h1{
 
 h1 img {
     height: 15vh;
+    filter: drop-shadow(5px 5px 4px #85848470);
 }
 
 div.formulario {
     width: fit-content;
-
     padding: 20px;
    text-align: left;
-   height: 30vh;
+   height: 40vh;
+
    background-color: #ffff;
    border-radius: 8px;
+   box-shadow:3px 2px 4px 0px #898d8d;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
  
 }
 
 form {
     font-family: 'Quicksand', sans-serif;
-    font-size: larger;
+    
 }
+
 
 form div.login{
     margin-bottom: 15px;
+    font-size: larger;
 }
 
 form div.senha{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: larger;
 }
 
 form #reset-password{
     color: #BA48DB;
     text-decoration: none;
-    font-weight: 600;
-    
+    font-size: small;  
 }
 form #reset-password:hover{
     color: #F952EB;
+}
+
+form div.reset{
+    margin-bottom: 20px;
+}
+
+form .button-login{
+    background-color: #A75CF2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: small;  
+}
+form .button-login:hover{
+    background-color: #F952EB;
+}
+
+form .sign-in{
+    margin-top: 20px;
+    background-color: #BA48DB;
+    
+    padding: 8px;
+    border-radius: 4px;
+    font-size: larger; 
+
+    text-align: center;
+    cursor: pointer;
+}
+form .sign-in:hover{
+    background-color: #F952EB;
+}
+
+
+form .sign-in a {
+    color: #ffffff;
+    text-decoration: none;
 }
