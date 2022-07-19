@@ -11,29 +11,28 @@
     <main>
         <div class="title">
             <h1>
-                <img src="/img/login2.png" alt="Login">
+                <img src="/img/sign_up.png" alt="Login">
             </h1>
         </div>
         <div class="formulario">
-            <form action="/auth/Login" method="post">
+            <form action="/users" method="post">
+                <div class="name">
+                    <label for="name">Name</label>
+                   <input type="text" id="name" name="name" placeholder="Jane">
+                </div>
                 <div class="login">
                     <label for="login">Login</label>
                    <input type="text" id="email" name="login" placeholder="Ex: email@gmail.com">
                 </div>
 
                 <div class="senha">
-                    <label for="password">Password:</label>
-                    <input type="password" name="password" id="senha" placeholder="Ex: 123456">
+                    <label for="senha">Password:</label>
+                    <input type="password"name="password" id="senha" placeholder="Ex: 123456">
                 </div>
-                <div class="reset">
-                    <a href="#" id="reset-password">Forgot your password?</a>
-                </div>
-                <div class="new-account">
-                    <a href="#" class="button-login">Create your account</a>
-                </div>
+                
                 <div class="sign-in">
                     <button class= "submit-button"type="submit">
-                        Sign in
+                        Create your account
                     </button>
                 </div>
             </form>

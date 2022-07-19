@@ -47,7 +47,10 @@ form {
     font-family: 'Quicksand', sans-serif;
     
 }
-
+form div.name{
+    margin-bottom: 15px;
+    font-size: larger;
+}
 
 form div.login{
     margin-bottom: 15px;
@@ -77,7 +80,7 @@ form .button-login{
     color: #ffffff;
     text-decoration: none;
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 20px;
     margin-top: 10px;
     font-size: small;  
 }
@@ -85,23 +88,33 @@ form .button-login:hover{
     background-color: #F952EB;
 }
 
-form .sign-in{
+form div.sign-in button.submit-button {
+
     margin-top: 20px;
+
     background-color: #BA48DB;
+    color: white;
+    border-style: none;
+    
+    width: 300px;
+    
+    text-shadow:none;
+    box-shadow:3px 2px 4px 0px #898d8d;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
     
     padding: 8px;
-    border-radius: 4px;
-    font-size: larger; 
+    border-radius: 20px;
+     
+    height: 6vh;
 
     text-align: center;
     cursor: pointer;
-}
-form .sign-in:hover{
-    background-color: #F952EB;
-}
-
-
-form .sign-in a {
-    color: #ffffff;
-    text-decoration: none;
-}
+    
+    }
+    form div.sign-in button.submit-button:hover{
+        background-color: #F952EB;
+    } 
+    

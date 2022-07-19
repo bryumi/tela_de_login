@@ -4,6 +4,8 @@ const authController = {
     },
     login: (request, response) => {
 
+        
+        return response.redirect('home')
     }
 }
 
