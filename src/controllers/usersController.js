@@ -3,6 +3,8 @@ const path = require('path');
 const { v4: uuid } = require('uuid');
 const bcrypt = require('bcryptjs');
 
+const { validationResult } = require('express-validator') 
+
 const userPath = path.join(__dirname, '..', 'database', 'users.json');
 
 const usersController = {
@@ -10,6 +12,13 @@ const usersController = {
         return response.render('form');
     },
     create: (request, response) => {
+        const errors = validationResult(request);
+
+        if(!errors.isEmpty()) {
+            
+            return response.render('form', { errors: errors.mapped()})
+        }
+
         const { password } = request.body;
 
         const passwordHash = bcrypt.hashSync(password);

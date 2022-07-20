@@ -15,19 +15,32 @@
             </h1>
         </div>
         <div class="formulario">
-            <form action="/users" method="post">
+            <% if(typeof errors !== 'undefined'){ %> 
+
+            <ul>
+                <% for(let error in errors) { %> 
+                    <li> <b><%= error %> : </b> <%= errors[error].msg %> </li>
+                <% } %> 
+            </ul>
+            <% } %> 
+            <form action="/users" method="post" enctype="multipart/form-data">
                 <div class="name">
                     <label for="name">Name</label>
                    <input type="text" id="name" name="name" placeholder="Jane">
                 </div>
                 <div class="login">
-                    <label for="login">Login</label>
-                   <input type="text" id="email" name="login" placeholder="Ex: email@gmail.com">
+                    <label for="login">Email</label>
+                   <input type="text" id="email" name="email" placeholder="Ex: email@gmail.com">
                 </div>
 
                 <div class="senha">
-                    <label for="senha">Password:</label>
+                    <label for="senha">Password</label>
                     <input type="password"name="password" id="senha" placeholder="Ex: 123456">
+                </div>
+                <div class="photo">
+                    <label for="avatar">Choose a photo</label>
+                    <label class= "button-file" for="avatar">Uploud</label>
+                    <input type="file" name="avatar" id="avatar">
                 </div>
                 
                 <div class="sign-in">

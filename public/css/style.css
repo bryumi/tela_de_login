@@ -28,6 +28,14 @@ h1 img {
     filter: drop-shadow(5px 5px 4px #85848470);
 }
 
+form input {
+    border: solid #898d8d 0.5px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    height: 4vh;
+    padding: 5px;
+}
+
 div.formulario {
     width: fit-content;
     padding: 20px;
@@ -50,22 +58,53 @@ form {
 form div.name{
     margin-bottom: 15px;
     font-size: larger;
+    color: #BA48DB;
 }
 
 form div.login{
     margin-bottom: 15px;
     font-size: larger;
+    color: #BA48DB;
 }
 
 form div.senha{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: larger;
+    color: #BA48DB;
 }
 
+form div.photo input[type="file"] {
+    display: none;
+}
+
+form div.photo label {
+    color: #8342c4;
+    font-size: medium;
+}
+
+form div.photo label.button-file{
+    padding: 8px 10px;
+    width: 200px;
+    background-color: #BA48DB;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 10px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+form div.photo label.button-file:hover{
+    background-color: #F952EB;
+}
 form #reset-password{
     color: #BA48DB;
     text-decoration: none;
-    font-size: small;  
+    font-size: 12px;
+    
+    position: relative;
+    left: 160px;
+
+    transition: 0.5s;
 }
 form #reset-password:hover{
     color: #F952EB;
@@ -83,9 +122,11 @@ form .button-login{
     border-radius: 20px;
     margin-top: 10px;
     font-size: small;  
+    transition: 0.5s;
 }
 form .button-login:hover{
     background-color: #F952EB;
+    
 }
 
 form div.sign-in button.submit-button {
@@ -112,6 +153,7 @@ form div.sign-in button.submit-button {
 
     text-align: center;
     cursor: pointer;
+    transition: 0.5s;
     
     }
     form div.sign-in button.submit-button:hover{
