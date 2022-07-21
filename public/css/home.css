@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: linear-gradient(to bottom,#ffb9ba, #f3dfb6);
+    background-attachment: fixed;
+}
+
+h1 img {
+    height: 15vh;
+    filter: drop-shadow(5px 5px 4px #85848470);
+}

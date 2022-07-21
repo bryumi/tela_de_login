@@ -10,11 +10,11 @@ const authController = {
         return response.render('index');
     },
     login: (request, response) => {
-        const { login, password } = request.body;
+        const { email, password } = request.body;
 
         const users = JSON.parse(fs.readFileSync(userPath));
         
-        const userFound = users.find(user => user.login === login);
+        const userFound = users.find(user => user.email === email);
 
         if (!userFound) {
             return response.status(401).redirect('/');
