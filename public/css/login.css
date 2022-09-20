@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-image: linear-gradient(to bottom,#ffb9ba, #f3dfb6);
+    background-attachment: fixed;
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+h1 img {
+    height: 15vh;
+    filter: drop-shadow(5px 5px 4px #85848470);
+}
+
+
+form input {
+    border: solid #898d8d 0.5px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    height: 4vh;
+    padding: 15px;
+}
+
+div.form-auth {
+    width: fit-content;
+    padding: 20px;
+   text-align: left;
+   height: 40vh;
+
+   background-color: #ffff;
+   border-radius: 8px;
+   box-shadow:3px 2px 4px 0px #898d8d;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ 
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+form label{
+   
+    font-size: larger;
+    color: #BA48DB;
+}
+
+form #reset-password{
+    color: #BA48DB;
+    text-decoration: none;
+    font-size: 12px;
+    
+    position: relative;
+    left: 160px;
+
+    transition: 0.5s;
+}
+form #reset-password:hover{
+    color: #F952EB;
+}
+
+form div.reset{
+    margin-bottom: 20px;
+}
+form div.new-account{
+    align-self: center;
+}
+form .button-login{
+    background-color: #A75CF2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: small;  
+    transition: 0.5s;
+}
+form .button-login:hover{
+    background-color: #F952EB;
+    
+}
+
+form div.sign-in button.submit-button {
+
+    margin-top: 20px;
+
+    background-color: #BA48DB;
+    color: white;
+    border-style: none;
+    
+    width: 300px;
+    
+    text-shadow:none;
+    box-shadow:3px 2px 4px 0px #898d8d;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Quicksand', sans-serif;
+    
+    padding: 8px;
+    border-radius: 20px;
+     
+    height: 6vh;
+
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    
+    }
+   
+    form div.sign-in button.submit-button:hover{
+        background-color: #F952EB;
+    } 
+    

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <script type="module" defer src="/js/validadores.js"></script>
     <title>Home</title>
 </head>
 <body>
@@ -14,33 +15,27 @@
                 <img src="/img/sign_up.png" alt="Login">
             </h1>
         </div>
-        <div class="formulario">
-            <% if(typeof errors !== 'undefined'){ %> 
-
-            <ul>
-                <% for(let error in errors) { %> 
-                    <li> <b><%= error %> : </b> <%= errors[error].msg %> </li>
-                <% } %> 
-            </ul>
-            <% } %> 
+        <div class="form-auth">
+           
             <form action="/users" method="post" enctype="multipart/form-data">
-                <div class="name">
+                
                     <label for="name">Name</label>
-                   <input type="text" id="name" name="name" placeholder="Jane">
-                </div>
-                <div class="login">
+                   <input type="text"  name="name" placeholder="Jane">
+               
+                
+                    <label for="username">User Name</label>
+                   <input type="text"  name="username" placeholder="Jane">
+                
                     <label for="login">Email</label>
-                   <input type="text" id="email" name="email" placeholder="Ex: email@gmail.com">
-                </div>
-
-                <div class="senha">
+                   <input type="text" name="email" placeholder="Ex: email@gmail.com">
+            
                     <label for="senha">Password</label>
-                    <input type="password"name="password" id="senha" placeholder="Ex: 123456">
-                </div>
+                    <input type="password"name="password"  placeholder="Ex: 123456">
+               
                 <div class="photo">
                     <label for="avatar">Choose a photo</label>
                     <label class= "button-file" for="avatar">Uploud</label>
-                    <input type="file" name="avatar" id="avatar">
+                    <input type="file" name="avatar" >
                 </div>
                 
                 <div class="sign-in">

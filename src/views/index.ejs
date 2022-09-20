@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Home</title>
 </head>
+
 <body>
     <main>
         <div class="title">
@@ -14,31 +16,33 @@
                 <img src="/img/login2.png" alt="Login">
             </h1>
         </div>
-        <div class="formulario">
+        <div class="form-auth">
             <form action="/auth/Login" method="post">
-                <div class="login">
-                    <label for="email">Email</label> 
-                   <input type="text" id="email" name="email" placeholder="email@gmail.com">
-                </div>
 
-                <div class="senha">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="senha" placeholder="123456">
-                </div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="email@gmail.com">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="senha" placeholder="123456">
+
                 <div class="reset">
                     <a href="#" id="reset-password">Forgot your password?</a>
                 </div>
+
                 <div class="new-account">
                     <a href="/users" class="button-login">Create your account</a>
                 </div>
+
                 <div class="sign-in">
-                    <button class= "submit-button"type="submit">
+                    <button class="submit-button" type="submit">
                         Sign in
                     </button>
                 </div>
+
             </form>
-    </div>
-</main>
+        </div>
+    </main>
 
 </body>
+
 </html>
