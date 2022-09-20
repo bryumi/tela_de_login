@@ -10,10 +10,10 @@ function isInputValid(name,value){
         return false;
     }
 
-    switch(value){
+    switch(name){
         case 'name':
             return value.length > 2 && value.length < 80;
-        
+
         case 'username':
             return value.length > 2 && value.length < 100;
         case 'email':
